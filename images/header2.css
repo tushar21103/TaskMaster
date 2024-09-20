@@ -1,0 +1,88 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    background-color: #313131; /* Change as needed */
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000; /* Ensure it stays on top */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 10rem;
+    height: auto;
+}
+.icons {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    align-items: center; /* Align items vertically in the center */
+}
+
+.icons a, .icons .dropbtn {
+    margin-right: 1rem; /* Space between items */
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+.icons a:hover{
+    background-color: #555;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: white;
+}
+
+.dropbtn {
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.dropbtn img {
+    height: 3rem; /* Set the desired height */
+    width: auto; /* Maintain the aspect ratio */
+    border-radius: 50%; /* Optional: Make it a circle */
+    margin-right: 10px; /* Space between image and the icon */
+}
+.dropbtn:hover {
+    background-color: #555;
+    color: white ;
+}

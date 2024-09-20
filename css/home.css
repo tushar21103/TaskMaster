@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #161616;
+    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column   ;
+}
+.container {
+    margin-top: 6rem;
+    background-color: transparent;
+    padding: 2rem;
+    width: 95%;
+    min-height: 80vh;
+    border-radius: 10px;
+    
+}
+.container {
+    padding: 20px;
+}
+
+.container button {
+    margin-bottom: 20px;
+}
+
+.container h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.container ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+/* .right_container{
+    width: 80%;
+    height: 80vh;
+    padding: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    margin-left: 20px;
+    max-width: 100%;
+    overflow: hidden;
+    height: auto;
+} */
+#add_task_btn{
+    width: 100%;
+}
+.task_title{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+#task_details b{
+    margin-bottom: 2.5rem;
+}
+.description_text{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    white-space: pre-wrap;  /* Preserves whitespace and wraps text */
+    word-wrap: break-word;  /* Breaks long words onto the next line */
+    overflow-wrap: break-word;  /* Handles breaking of words */
+}
+.task_buttons{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.task_btn, .stat_button, .cat_button{
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    background-color: #e20404;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.task_deadline, .task_status, .task_category {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Adjust the spacing as needed */
+    font-size: 1.5rem;
+}
+
+.task_deadline span, .task_status span, .task_category span {
+    margin-left: 0.7rem; /* Adjust the spacing as needed */
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.task_description {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.description_text {
+    margin-bottom: 15px; /* Adjust the spacing as needed */
+    text-align: justify;
+}
+
+/* filters */
+.status_buttons, .category_buttons{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    /* gap: 1rem; */
+    /* width: auto;*/
+}
+
+.status_title h2{
+    margin-bottom: 10px;
+}
+.all_task_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(60px/2); /* Space between tasks */
+
+}
+
+.task_button {
+    background: #333; /* or your preferred color */
+    color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    width: calc(33.333% - 20px); /* Adjust width based on how many tasks per row you want */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    position: relative;
+    padding-bottom: 3rem;
+}
+.go_to_task{
+    position: absolute;
+    width: auto;
+    padding: 0.5rem 1rem;
+    right: 0;
+    bottom: 0;
+    margin: 1rem;
+    border-radius: 10px;
+    color: white;
+    background: #e20404;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.TaskTitle{
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+}
+.TaskDeadline, .TaskStatus, .task_button p{
+    margin-top: 0.7rem;
+    color: white;
+    font-size: 17px;
+}
+.TaskStatus{
+    margin-bottom: 1rem;
+}
+#add_task_btn{
+    background: #e20404;
+    width: 10%;
+    margin: 0;
+}
+
+/* Filter */
+.filter_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    align-items:center;
+    margin-bottom: 20px;
+}
+.filterBTN label{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.filterBTN select{
+    border-radius: 10px;
+    background-color: #313131;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 14px;
+    resize: none; /* Prevent resizing by the user */
+    overflow: hidden; /* Hide overflow */
+    text-align: justify;
+    margin-left: 0.7rem;
+    margin-right: 2rem;
+    padding: 0.5rem;
+}
+/* Task Details Page */
+.task_container{
+    width: 100%;
+    height: auto;
+    background-color: #313131;
+    border-radius: 20px;
+    padding: 1rem;
+}
+.task_heading{
+    padding: 0.5rem 1rem;
+    color: white;
+}
+.show_task{
+    padding: 1rem;
+}
+.show_task label{
+    color: white;
+    font-size: 22px;
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    padding-left: 0.4rem;
+}
+.show_task input, .show_task textarea, .show_task select{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 25px;
+    background-color: #2c2c2c;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 16px;
+    resize: none; /* Prevent resizing by the user */
+    overflow: hidden; /* Hide overflow */
+    text-align: justify;
+}
+.show_task textarea{
+    height: auto;
+}
+
+.task_edit_buttons{
+    padding: 1rem;
+}
+.task_edit_buttons input{
+    background-color: #e20404;
+    margin-right: 0.5rem;
+}
+.pagination{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px; /* Add padding if needed */
+    z-index: 1000; /* Adjust z-index if necessary */
+    display: flex;
+    text-align: center;
+    margin: 20px 0;
+}
+.pagination .page_link, .pagination .current_page {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-color: #313131;
+    color: white;
+    text-decoration: none;
+    user-select: none;
+}
+
+.pagination .current_page {
+    background-color: #e20404;
+    color: #fff;
+}
+
+.pagination .page_link:hover {
+    background-color: #e20404;
+    color: #fff;
+}
